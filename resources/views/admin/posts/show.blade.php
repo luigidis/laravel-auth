@@ -6,6 +6,11 @@
         <div class="col-8">
             <h1>{{$post->title}}</h1>
             <h4>{{ $post->slug }}</h4>
+
+            @dump($post->category)
+
+            @dump($post->category())
+            
             <ul class="d-flex">
                 <li> {{ $post->created_at }}</li>
                 <li class="ml-5">{{ $post->updated_at }}</li>
